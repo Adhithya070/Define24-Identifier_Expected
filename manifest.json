@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Fact-Check-Define",
+  "description": "Fact-Checking online content.",
+  "version": "1.0",
+  "icons": {
+
+  },
+
+  "action": {
+    "default_popup": "index.html"
+  },
+   "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+
+  "permissions": ["activeTab", "scripting"]
+}
+
