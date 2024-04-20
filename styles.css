@@ -6,10 +6,13 @@
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: bold;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 150px;
+  max-height: 400px;
 }
-
 
 .HeaderName{
   display: flex;
@@ -18,21 +21,34 @@ body{
   text-align: center;
   background-color: #c3dcff; 
   border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 .StatusBox{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 125px; 
   background: #c3dcff; 
   border-radius: 12px;
+  margin-bottom: 12px;
+  gap:0.5rem
 }
 
 .Status{
   display: flex;
   flex-direction: row;
+}
+
+.DescriptionBox{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  height: 125px; 
+  background: #c3dcff; 
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 header{
