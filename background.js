@@ -15,9 +15,9 @@ chrome.runtime.onMessage.addListener(
             const text = await response.text(); // Await the Promise
             console.log("STUFF: \n");
             console.log(text);
-            const jsonObject =  JSON.parse(text);
+            /*const jsonObject =  JSON.parse(text);
             const finalText = jsonObject.Description;
-            console.log("IMP!!:\n"+finalText);
+            console.log("IMP!!:\n"+finalText);*/
 
             
             /*chrome.tabs.query({active: true, currentWindow: true}, 
@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(
                     chrome.tabs.sendMessage(tabs[0].id,{msg: finalText})
 
             );*/
-                chrome.runtime.sendMessage({msg: finalText});
+                chrome.runtime.sendMessage({msg: text});
             
         }
     }
