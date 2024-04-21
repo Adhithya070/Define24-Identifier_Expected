@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "fact-check",
-  "description": "Def Hack 2024",
+  "name": "FactCheck - Define2024",
+  "description": "Scans the contents of a webpage and checks for misinformation",
   "version": "1.0",
   "icons": {
     "16": "images/Fact16.png",
@@ -13,14 +13,7 @@
     "default_popup": "popup.html"
   },
   "permissions": ["activeTab", "scripting"],
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "Command+B"
-      }
-    }
-  },
+
   "background": {
     "service_worker": "background.js",
     "type":"module"

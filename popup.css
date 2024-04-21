@@ -4,9 +4,18 @@
 }
 
 :root{
-  --primary-color: white;
-  --secondary-color:rgb(137, 137, 244);
-  --bg-color:rgb(255, 255, 255);
+  --secondary-color:#8989f4;
+  --bg-color:#FFFFFF;
+
+  --secondary-color-true: #0cffa1;
+  --bg-color-true: #0eb87b;
+
+  --secondary-color-false: #cc4d18;
+  --bg-color-false: #ff611e;
+}
+
+i{
+  font-size: 28px;
 }
 
 body{
@@ -74,6 +83,6 @@ Button{
   width: 390px;
   padding: 20px 8px;
   font-size: 21px;
-  background-color: rgb(69, 230, 197);
+  background-color: #bfbfbf;
   margin-bottom: 12px;
 }
