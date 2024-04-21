@@ -3,15 +3,23 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-color: white;
+  --secondary-color:rgb(137, 137, 244);
+  --bg-color:rgb(255, 255, 255);
+}
+
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-size: 18px;
   font-weight: 400;
   font-style: bold;
   min-width: 400px;
   max-width: 400px;
   min-height: 150px;
   max-height: 400px;
+  background-color: var(--bg-color);
 }
 
 .HeaderName{
@@ -19,8 +27,9 @@ body{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #c3dcff; 
-  border-radius: 12px;
+  background-color: var(--secondary-color); 
+  border-radius: 6px;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 
@@ -29,9 +38,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 125px; 
-  background: #c3dcff; 
-  border-radius: 12px;
+  min-height: 125px; 
+  background-color: var(--secondary-color); 
+  border-radius: 6px;
   margin-bottom: 12px;
   gap:0.5rem
 }
@@ -41,13 +50,13 @@ body{
   flex-direction: row;
 }
 
-.DescriptionBox{
+.descriptionBox{
   display: flex;
   flex-direction: row;
   padding: 12px;
-  height: 125px; 
-  background: #c3dcff; 
-  border-radius: 12px;
+  min-height: 100px; 
+  background-color: var(--secondary-color); 
+  border-radius: 6px;
   margin-bottom: 12px;
 }
 
@@ -58,7 +67,13 @@ header{
   
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
+Button{
+  cursor: pointer;
+  border: none;
+  border-radius: 3%;
+  width: 390px;
+  padding: 20px 8px;
+  font-size: 21px;
+  background-color: rgb(69, 230, 197);
+  margin-bottom: 12px;
 }

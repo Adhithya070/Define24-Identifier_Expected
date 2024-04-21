@@ -29,21 +29,19 @@
           <i class="fa-solid fa-circle-question"></i>
           <p id="Verification">[Verification]</p>
         </div>
-        <div class="Reliability" id="Reliability">
-          <p>Reliability: <span id="ReliabilityPercentage">[n]</span>%</p>
-          <p>Status: <span id="StatusText">[True/False/Uncertain]</span></p>
+        <div class="reliability" id="reliability">
+          <p>Reliability: <span id="reliabilityPercentage">[n]</span>%</p>
+          <p>Status: <span id="statusText">[True/False/Uncertain]</span></p>
         </div>
       </div>
 
       <div>
-        <div class="DescriptionBox" id="DescriptionBox">
-          <p id="DescriptionText">[insert description here]</p>
+        <div class="descriptionBox" id="descriptionBox">
+          <p id="descriptionText">[insert description here]</p>
         </div>
       </div>  
-
+      <button class="readButton" id="readButton">Scan</button>
     </div>
-    <button id="readButton">Read Website Text</button>
-	<div id="result"></div>
     <script src="popup.js"></script>
   </body>
   </html>
