@@ -3,7 +3,12 @@
   "name": "fact-check",
   "description": "Def Hack 2024",
   "version": "1.0",
-  "icons": {},
+  "icons": {
+    "16": "images/Fact16.png",
+    "32": "images/Fact32.png",
+    "48": "images/Fact48.png",
+    "128": "images/Fact128.png"
+  },
   "action": {
     "default_popup": "popup.html"
   },
