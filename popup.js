@@ -2,8 +2,8 @@
 document.getElementById('readButton').addEventListener('click', () => {
         document.getElementById('descriptionBox').innerText = "LOADING";
      document.getElementById('reliabilityPercentage').innerText="LOADING";
-document.getElementByI('statusText').innerText= "LOADING";
-        document.getElementById('Status').innerHTML= "";
+document.getElementById('statusText').innerText= "LOADING";
+        document.getElementById('Status').innerHTML= '<i class="fa-solid fa-circle-question"></i>';
 
     //document.getElementById('StatusIcon').innerHTML= '<i class="fa-solid fa-circle-question"></i>';
   // Get the active tab
