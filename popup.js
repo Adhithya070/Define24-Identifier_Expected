@@ -1,5 +1,6 @@
 // Listen for clicks on the "Read Website Text" button
 document.getElementById('readButton').addEventListener('click', () => {
+        document.getElementById('descriptionBox').innerText = "LOADING";
   // Get the active tab
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     // Execute a script in the active tab to read the contents of the body
@@ -17,3 +18,10 @@ document.getElementById('readButton').addEventListener('click', () => {
   });
 });
 
+chrome.runtime.onMessage.addListener(async (resp) => {
+    //console.log(resp.msg);
+    const response = await resp.msg;
+    if(response) {
+  document.getElementById('descriptionBox').innerText = response;
+    }
+});
