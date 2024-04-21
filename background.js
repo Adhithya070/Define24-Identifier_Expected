@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener(
             console.log("WORKS2");
             const genAI = new GoogleGenerativeAI("AIzaSyDZ_N6VRLam-WtgidcyssOG0_NzAONS66Q");
             const model = genAI.getGenerativeModel({ model: "gemini-pro"});
-            const prompt = `const prompt = Check whether the content provided below is misinformation or not. Give the output in a JSON Format without addtional formatting. JSON FORMAT - (Title: [title of the news] Reliability: [percantage of credibility from 0% to 100%] Status: [False, True or Uncertain] Description: [Include an explaination]) CONTENT -(${message.text})`;
+            const prompt = `const prompt = Ascertain whether the content provided below is factually incorrect or misinformation or probably reliable information. Give the output as a JSON file text without addtional formatting. JSON FORMAT - (Title: [title of the news] Reliability: [percentage of credibility ranging from 0% to 100%] Status: [Probably False,Probably True or Uncertain] Description: [an explaination for giving the status]) CONTENT -(${message.text})`;
             const result = await model.generateContent(prompt);
             const response = await result.response;
             const text = await response.text(); // Await the Promise

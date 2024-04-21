@@ -5,7 +5,6 @@ document.getElementById('readButton').addEventListener('click', () => {
 document.getElementById('statusText').innerText= "LOADING";
         document.getElementById('Status').innerHTML= '<i class="fa-solid fa-circle-question"></i>';
 
-    //document.getElementById('StatusIcon').innerHTML= '<i class="fa-solid fa-circle-question"></i>';
   // Get the active tab
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     // Execute a script in the active tab to read the contents of the body
@@ -24,10 +23,18 @@ document.getElementById('statusText').innerText= "LOADING";
 });
 
 chrome.runtime.onMessage.addListener(async (resp) => {
-    //console.log(resp.msg);
+    if(resp) {
+        console.log("RESPPP");
+    run(resp);
+    }
+});
+
+async function run(resp) {
     const response = await resp.msg;
     if(response) {
+        try {
         const jsonObject =  JSON.parse(response);
+
         const finalText = jsonObject.Description;
         const status = jsonObject.Status;
         document.getElementById('reliabilityPercentage').innerText = jsonObject.Reliability;
@@ -39,5 +46,12 @@ chrome.runtime.onMessage.addListener(async (resp) => {
             document.getElementById('Status').innerHTML = '<i class="fa-solid fa-circle-question"></i>';
         }
   document.getElementById('descriptionBox').innerText = finalText;
-    }
-});
+    } catch(err) {
+            console.log("WJIOSHDFIOHDFIOSHF");
+document.getElementById('descriptionBox').innerText = "Error in json please retry.";
+
+
+        }
+}
+
+}
