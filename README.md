@@ -13,7 +13,7 @@ Chrome Extension
 [4. Adhithya Smitha Raj](https://github.com/Adhithya070)   
 
 ### Link to Project
-[Embed the live link of project](live_link)
+[[Embed the live link of project](https://anandpillai04.github.io/Define/)](https://anandpillai04.github.io/Define/)
 
 ### How it Works ?
 Explaining the working of project  
