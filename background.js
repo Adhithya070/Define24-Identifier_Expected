@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(
         if (message.text) { // Changed from message.websiteText to message.text
             console.log("Website text received in background.js:", message.text);
             console.log("WORKS2");
-            const genAI = new GoogleGenerativeAI("AIzaSyDZ_N6VRLam-WtgidcyssOG0_NzAONS66Q");
+            const genAI = new GoogleGenerativeAI("AIzaSyCQKV_ZsuLNR7Ka2ElUPlWSWHFx0XRBKR4");
             const model = genAI.getGenerativeModel({ model: "gemini-pro"});
             const prompt = `const prompt = Ascertain whether the content provided below is factually incorrect or misinformation or probably reliable information. Give the output as a JSON file text without addtional formatting. JSON FORMAT - (Title: [title of the news] Reliability: [percentage of credibility ranging from 0% to 100%] Status: [Probably False,Probably True or Uncertain] Description: [an explaination for giving the status]) CONTENT -(${message.text})`;
             const result = await model.generateContent(prompt);

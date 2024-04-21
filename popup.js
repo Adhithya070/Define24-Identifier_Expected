@@ -1,5 +1,6 @@
 // Listen for clicks on the "Read Website Text" button
 document.getElementById('readButton').addEventListener('click', () => {
+                document.querySelector('body').classList.add('body');;
         document.getElementById('descriptionBox').innerText = "LOADING";
      document.getElementById('reliabilityPercentage').innerText="LOADING";
 document.getElementById('statusText').innerText= "LOADING";
@@ -39,15 +40,23 @@ async function run(resp) {
         const status = jsonObject.Status;
         document.getElementById('reliabilityPercentage').innerText = jsonObject.Reliability;
         document.getElementById('statusText').innerText = status;
-        if(status === "True") {
+        if(status === "Probably True") {
             document.getElementById('Status').innerHTML = '<i class="fa-solid fa-square-check"></i>';
+            document.documentElement.style.setProperty('--bg-color', '#0eb87b'); // Green background
+            document.documentElement.style.setProperty('--secondary-color', '#0cffa1'); // Black text color
         }
-        else if(status === "Uncertain") {
-            document.getElementById('Status').innerHTML = '<i class="fa-solid fa-circle-question"></i>';
+        else if(status === "Probably False") {
+            document.getElementById('Status').innerHTML = '<i class="fa-solid fa-square-xmark"></i>';
+            document.documentElement.style.setProperty('--bg-color', '#ff611e'); // Red background
+            document.documentElement.style.setProperty('--secondary-color', '#cc4d18'); // Black text color
         }
-  document.getElementById('descriptionBox').innerText = finalText;
+	else {
+		document.getElementById('Status').innerHTML = '<i class="fa-solid fa-circle-question"></i>';
+
+    }
+        document.getElementById('descriptionBox').innerText = finalText;
     } catch(err) {
-            console.log("WJIOSHDFIOHDFIOSHF");
+            console.log(err);
 document.getElementById('descriptionBox').innerText = "Error in json please retry.";
 
 
