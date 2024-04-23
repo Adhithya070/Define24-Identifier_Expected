@@ -1,6 +1,7 @@
 # Misinfomation Identifier
 
-![image](https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/ac76413e-64f6-40c5-9f2c-f112d1851c7d)
+![image](https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/4f5df8c5-f5a9-4155-899f-84ed6c2d4c3b)
+
 
 
 
@@ -15,15 +16,18 @@ Problem Statement: Fighting misinformation and promoting media literacy
 [3. Shiv Sanjay](https://github.com/Shivsay)   
 [4. Adhithya Smitha Raj](https://github.com/Adhithya070)   
 
-### Link to Project
-[[Embed the live link of project](https://anandpillai04.github.io/Define/)](https://anandpillai04.github.io/Define/)
+### Link to Media Literacy Website
+[https://anandpillai04.github.io/Define/](https://anandpillai04.github.io/Define/)
+
 
 ### How it Works ?
 The chrome extension scans the current web page, analyzes the content using reputable online sources to fact-check and verify the authencity of the web page.
 The Discord-bot uses python script for backend and functions like a normal discord bot to output similar content to the extension.
+The Whatsapp bot accepts text inputs, and runs the message through the same backend of fact checking and provides an output.
 
+### Video demo of Fact-Check Extension:
 
-Embed video of project demo
+[![Watch the video](https://img.youtube.com/vi/sYzrAwHNoM4/hqdefault.jpg)](https://youtu.be/sYzrAwHNoM4)
 
 ### Technologies used
   Gemini API
@@ -41,8 +45,8 @@ Embed video of project demo
 
 ### How to configure
 1. Git clone the repo
-2. Add API key in background.js available at: https://aistudio.google.com/app/apikey
-3. enable developer mode for here extensions chrome://extensions/
+2. Add API key in background.js file available at: https://aistudio.google.com/app/apikey
+3. Enable developer mode for extensions here: chrome://extensions/
 4. Click on Load unpacked, select the directory, extension will now be installed.
 
 ### How to Run
