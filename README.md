@@ -1,12 +1,6 @@
-# Misinfomation Identifier
-
 ![image](https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/4f5df8c5-f5a9-4155-899f-84ed6c2d4c3b)
 
-
-
-
-
-## Project Name
+# Fighting Misinformation - Fact Checking Extension + Discord and Whatsapp bot
 Problem Statement: Fighting misinformation and promoting media literacy
  
 
@@ -55,3 +49,7 @@ Click on the extension installed while on a news article web page.
 Gallery
 ![image](https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/d45bdd34-ec98-430d-b6ad-e30dcda73950)
 ![image](https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/7a91375f-256d-4355-9922-3bd1607422b1)
+<img width="817" alt="Screenshot 2024-04-21 at 15 51 31" src="https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/c6b3ccc6-9937-4486-ac70-31d5c412efe7">
+<img width="793" alt="Screenshot 2024-04-22 at 19 11 47" src="https://github.com/kevin-ai-04/Define24-Identifier_Expected/assets/117845901/28c1d3f2-e89d-47af-939b-7e8af033ad39">
+
+
