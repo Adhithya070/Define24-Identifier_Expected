@@ -21,7 +21,7 @@ The Whatsapp bot accepts text inputs, and runs the message through the same back
 
 ### Video demo of Fact-Check Extension:
 
-[![Watch the video](https://img.youtube.com/vi/sYzrAwHNoM4/hqdefault.jpg)](https://youtu.be/sYzrAwHNoM4)
+[![Watch the video](https://img.youtube.com/vi/tm8j3HuO1hc/hqdefault.jpg)](https://youtu.be/tm8j3HuO1hc)
 
 ### Technologies used
   Gemini API
